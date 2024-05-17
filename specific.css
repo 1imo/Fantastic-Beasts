@@ -1,0 +1,35 @@
+.fantastic-beasts {
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    grid-column: 2 / span 10;
+    display: grid;
+}
+
+.beast-card {
+    margin-top: 16px;
+    grid-column: 4 / span 6;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.beast-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beast-description {
+    display: block;
+    color: #2E2E2E;
+}
+
+.beast-card a,
+.beast-card a:visited {
+    text-decoration: none;
+    margin-top: 8px;
+    color: #2E2E2E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: none;
+}
