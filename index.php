@@ -12,16 +12,15 @@
         require_once 'beast.php';
         require_once 'json.php';
         require_once 'beast_home.php';
+        require_once 'search.php';
 
         // Load all beasts from json.php
         $allBeasts = $fantasticBeasts;
 
-        // If search query exists, filter beasts
+        // If search query exists, filter beasts using semantic search
         if(isset($_GET['search'])) {
-            $searchQuery = strtolower($_GET['search']);
-            $filteredBeasts = array_filter($allBeasts, function($beast) use ($searchQuery) {
-                return strpos(strtolower($beast->getName()), $searchQuery) !== false;
-            });
+            $searchQuery = $_GET['search'];
+            $filteredBeasts = semanticSearchBeasts($allBeasts, $searchQuery, 100);
         } else {
             $filteredBeasts = $allBeasts;
         }

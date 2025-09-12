@@ -123,6 +123,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
+    margin-bottom: 32px;
 }
 
 .beast-card {
