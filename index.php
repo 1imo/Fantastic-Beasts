@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Explore the magical world of Fantastic Beasts and discover detailed information about magical creatures.">
+    <title>Fantastic Beasts</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Timo Hoyland">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Fantastic Beasts",
+        "author": {
+            "@type": "Person",
+            "name": "Timo Hoyland"
+        }
+    }
+    </script>
 </head>
 <body>
     <?php
