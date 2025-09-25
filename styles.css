@@ -161,6 +161,7 @@ h2 {
 .beast-description {
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -174,4 +175,150 @@ h2 {
     color: #2E2E2E;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        padding: 0 16px;
+    }
+
+    header {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        padding: 16px 0;
+    }
+
+    header h1 {
+        grid-column: 1;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    header form {
+        grid-column: 1;
+        grid-template-columns: 1fr auto;
+        grid-gap: 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header form input {
+        grid-column: 1;
+        font-size: 14px;
+        padding: 10px 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header form button {
+        grid-column: 2;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .filter-buttons {
+        grid-column: 1;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        justify-content: flex-start;
+    }
+
+    .fantastic-beasts {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    .beast-card {
+        row-gap: 12px;
+    }
+
+    .beast-name-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .beast-classification {
+        align-self: center;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .beast-card a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 12px;
+        grid-gap: 12px;
+    }
+
+    header {
+        grid-gap: 12px;
+        padding: 12px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header h1 > span {
+        font-size: 18px;
+    }
+
+    .filter-buttons {
+        column-gap: 12px;
+        row-gap: 6px;
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+
+    .filter-buttons h3,
+    .filter-buttons a {
+        font-size: 14px;
+    }
+
+    .fantastic-beasts {
+        grid-gap: 32px;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    .beast-card {
+        row-gap: 12px;
+    }
+
+    .beast-classification {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .beast-card a {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .beast-description {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        font-size: 14px;
+    }
 }
