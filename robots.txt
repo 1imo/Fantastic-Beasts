@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fantasticbeasts.world/sitemap.xml
+Sitemap: https://www.fantasticbeasts.world/sitemap.xml
+
