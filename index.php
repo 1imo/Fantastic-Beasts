@@ -6,6 +6,7 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="Explore the magical world of Fantastic Beasts and discover detailed information about magical creatures.">
     <title>Fantastic Beasts</title>
+    <link rel="canonical" href="https://fantasticbeasts.world/">
     <link rel="stylesheet" href="styles.css">
     <meta name="author" content="Timo Hoyland">
     <script type="application/ld+json">
